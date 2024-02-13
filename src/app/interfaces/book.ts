@@ -3,7 +3,7 @@ import { Domain } from './domain';
 import { Loan } from './loan';
 
 export interface Book {
-  id?: number;
+  id: number;
   titre: string;
   nombreDePage: number;
   domaineId: number;

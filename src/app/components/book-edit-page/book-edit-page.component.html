@@ -1,1 +1,14 @@
-<p>book-edit-page works!</p>
+<form (ngSubmit)="onSubmit()">
+  <label for="title">Titre</label>
+  <input type="text" name="title" id="title" [(ngModel)]="book.titre" />
+  <label for="numpage">Nombre de pages</label>
+  <input
+    type="number"
+    name="numpage"
+    id="numpage"
+    [(ngModel)]="book.nombreDePage"
+  />
+  <label for="domain">Domaine</label>
+  <input type="text" name="domain" id="domain" [(ngModel)]="book.domaine.nom" />
+  <input type="submit" value="Modifier" />
+</form>
