@@ -1,0 +1,20 @@
+header {
+
+    font-size: 10px;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    color: grey;
+    padding: 10px;
+
+}
+
+a{
+    text-decoration: none;
+    color: gray;
+    padding: 35px;
+    font-size: 16px;
+}
+
+a:hover{
+    color: black;
+}

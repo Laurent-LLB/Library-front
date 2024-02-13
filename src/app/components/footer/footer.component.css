@@ -1,0 +1,10 @@
+
+footer {
+
+    font-size: 10px;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    color: grey;
+    padding: 10px;
+
+}
