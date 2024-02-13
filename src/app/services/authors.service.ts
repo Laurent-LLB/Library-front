@@ -22,10 +22,6 @@ export class AuthorsService {
     return this.http.get<Author>(`${this.baseUrl}/auteurs/${id}`);
   }
 
-  getSimple(id: number): Observable<SimpleAuthor> {
-    return this.http.get<SimpleAuthor>(`${this.baseUrl}/auteurs/${id}`);
-  }
-
   put(id: number, author: SimpleAuthor) {
     return this.http.put<any>(`${this.baseUrl}/auteurs/${id}`, author, {
       observe: 'response',

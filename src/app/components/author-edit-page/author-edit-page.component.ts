@@ -33,7 +33,7 @@ export class AuthorEditPageComponent {
   ngOnInit(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
     this.authorsService
-      .getSimple(id)
+      .get(id)
       .subscribe((author) => (this.author = author));
   }
 
