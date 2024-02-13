@@ -7,4 +7,5 @@ export interface Author {
   email: string;
   telephone: string;
   livres: Book[];
+  grade: string;
 }

@@ -2,18 +2,18 @@ import { HttpClient } from '@angular/common/http';
 import { Inject, Injectable } from '@angular/core';
 import { BASE_API_URL } from '../constants/injection';
 import { Observable } from 'rxjs';
-import { Author } from '../interfaces/author';
+import { Book } from '../interfaces/book';
 
 @Injectable({
   providedIn: 'root',
 })
-export class AuthorsService {
+export class BooksService {
   constructor(
     private http: HttpClient,
     @Inject(BASE_API_URL) private baseUrl: string
   ) {}
 
-  getAll(): Observable<Author[]> {
-    return this.http.get<Author[]>(`${this.baseUrl}/auteurs`);
+  getAll(): Observable<Book[]> {
+    return this.http.get<Book[]>(`${this.baseUrl}/books`);
   }
 }
