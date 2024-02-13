@@ -1,1 +1,21 @@
-<p>book-details-page works!</p>
+<div class="books-list-wrapper">
+  <h1>Livres :</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Titre</th>
+        <th>Nombre de pages</th>
+        <th>Domaine</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ book?.titre }}</td>
+        <td>{{ book?.nombreDePage }}</td>
+        <td>{{ book?.domaine?.nom }}</td>
+        <td>Delete</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
