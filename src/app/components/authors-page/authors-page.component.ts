@@ -8,8 +8,7 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-authors-page',
   standalone: true,
-  imports: [AsyncPipe, NgForOf],
-  imports: [RouterLink],
+  imports: [AsyncPipe, NgForOf, RouterLink],
   templateUrl: './authors-page.component.html',
   styleUrl: './authors-page.component.css',
 })
