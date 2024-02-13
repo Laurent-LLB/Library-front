@@ -1,14 +1,13 @@
-
-<div *ngFor="let author of authors$ | async">
-  <p>
-    {{ author.grade }} {{ author.nom }}, {{ author.prenom }}, {{ author.email }}
-    {{ author.telephone }}
-  </p>
-</div>
-<div class = "author">
-    <a routerLink='create'>Create New</a> 
-    <a routerLink=':id/edit'>Edit</a> 
-    <a routerLink=':id'>Details</a>
-    <a routerLink="Delete">Delete</a>
-
+<div class="author">
+  <a routerLink="create">Create New</a>
+  <div *ngFor="let author of authors$ | async">
+    <p>
+      {{ author.grade }} {{ author.nom }}, {{ author.prenom }},
+      {{ author.email }}
+      {{ author.telephone }}
+      <a [routerLink]="[author.id, 'edit']">Edit</a>
+      <a [routerLink]="[author.id]">Details</a>
+      <a routerLink="Delete">Delete</a>
+    </p>
+  </div>
 </div>
