@@ -16,4 +16,8 @@ export class AuthorsService {
   getAll(): Observable<Author[]> {
     return this.http.get<Author[]>(`${this.baseUrl}/auteurs`);
   }
+
+  get(id:number):Observable<Author> {
+    return this.http.get<Author>(`${this.baseUrl}/auteurs/${id}`)
+  }
 }
