@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+
+body{
+    font-family:monospace;
+    margin: 0;
+}
+
+h1, h3{
+    color: white;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+}
