@@ -1,3 +1,9 @@
+<div *ngFor="let book of books$ | async">
+  <p>
+    {{ book.titre }} {{ book.nombreDePage }}, {{ book.domaine.nom }},
+    {{ book.auteur.nom }}
+  </p>
+</div>
 
 <div class = "books">
 <a routerLink='create'>Create New</a> 
@@ -5,3 +11,4 @@
 <a routerLink=':id'>Details</a>
 <a routerLink="Delete">Delete</a>
 </div>
+
