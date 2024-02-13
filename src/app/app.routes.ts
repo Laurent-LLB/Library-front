@@ -7,6 +7,8 @@ import { AuthorDetailsPageComponent } from './components/author-details-page/aut
 import { BookEditPageComponent } from './components/book-edit-page/book-edit-page.component';
 import { AuthorEditPageComponent } from './components/author-edit-page/author-edit-page.component';
 import { ErrorPageComponent } from './components/error-page/error-page.component';
+import { AuthorCreatePageComponent } from './components/author-create-page/author-create-page.component';
+import { BookCreatePageComponent } from './components/book-create-page/book-create-page.component';
 
 export const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/main' },
@@ -14,7 +16,9 @@ export const routes: Routes = [
   { path: 'authors', component: AuthorsPageComponent },
   { path: 'authors/:id', component: AuthorDetailsPageComponent },
   { path: 'authors/:id/edit', component: AuthorEditPageComponent },
+  { path: 'authors/create', component: AuthorCreatePageComponent },
   { path: 'books', component: BooksPageComponent },
+  { path: 'books/create', component: BookCreatePageComponent },
   { path: 'books/:id', component: BookDetailsPageComponent },
   { path: 'books/:id/edit', component: BookEditPageComponent },
   { path: '**', pathMatch: 'full', component: ErrorPageComponent },
