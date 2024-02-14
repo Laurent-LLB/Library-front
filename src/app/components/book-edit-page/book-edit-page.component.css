@@ -2,3 +2,20 @@ form {
   margin-top: 50px;
   margin-bottom: 50x;
 }
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 850px; 
+  padding: 20px;
+
+label {
+  margin-bottom: 5px; 
+  font-weight: bold;
+}
+
+input {
+  margin-bottom: 10px;
+
+}
+}

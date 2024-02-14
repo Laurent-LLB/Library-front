@@ -1,14 +1,23 @@
-<form (ngSubmit)="onSubmit()">
-  <label for="title">Titre</label>
-  <input type="text" name="title" id="title" [(ngModel)]="book.titre" />
-  <label for="numpage">Nombre de pages</label>
-  <input
-    type="number"
-    name="numpage"
-    id="numpage"
-    [(ngModel)]="book.nombreDePage"
-  />
-  <label for="domain">Domaine</label>
-  <input type="text" name="domain" id="domain" [(ngModel)]="book.domaine.nom" />
-  <input type="submit" value="Modifier" />
-</form>
+
+<div class = "book">
+<div class = "full">
+<div class="form-container">
+  <form (ngSubmit)="onSubmit()">
+    <tr>
+    <label for="title">Titre</label>
+    <td></td><input type="text" name="title" id="title" [(ngModel)]="book.titre" />
+    </tr>
+    <tr>
+    <label for="numpage">Nombre de pages</label>
+    <td></td><input type="number" name="numpage" id="numpage" [(ngModel)]="book.nombreDePage" />
+    </tr>
+    <tr>
+    <label for="domain">Domaine</label>
+    <td></td><input type="text" name="domain" id="domain" [(ngModel)]="book.domaine.nom" />
+    </tr>
+    <input type="submit" value="Save" />
+    
+  </form>
+</div>
+</div>
+</div>
