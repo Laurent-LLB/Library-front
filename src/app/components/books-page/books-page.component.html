@@ -1,12 +1,31 @@
 <div class="books">
-  <a routerLink="create">Create New</a>
-  <div *ngFor="let book of books$ | async">
-    <p>
-      {{ book.titre }} {{ book.nombreDePage }}, {{ book.domaine.nom }},
-      {{ book.auteur.nom }}
-      <a [routerLink]="[book.id, 'edit']">Edit</a>
-      <a [routerLink]="[book.id]">Details</a>
-      <a routerLink="Delete">Delete</a>
-    </p>
+  <div class="button-create">
+    <a routerLink="create">Create New</a>
+  </div>
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th>Titre</th>
+          <th>Nombre de pages</th>
+          <th>Domaine</th>
+          <th>Auteur</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let book of books$ | async">
+          <td>{{ book.titre }}</td>
+          <td>{{ book.nombreDePage }}</td>
+          <td>{{ book.domaine.nom }}</td>
+          <td>{{ book.auteur.nom }}</td>
+          <td>
+            <a [routerLink]="[book.id, 'edit']">Edit</a>
+            <a [routerLink]="[book.id]">Details</a>
+            <a routerLink="Delete">Delete</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>
