@@ -23,3 +23,40 @@ footer {
     position: sticky;
     bottom: 0;
 }
+
+.button-create{
+    max-width: 100px;
+    padding: 10px;
+    background-color:rgba(248, 223, 168, 0.856);;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    top: 15%;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 850px;
+    background-color:rgba(248, 223, 168, 0.856);;
+    padding: 5px;
+    border-radius: 5PX;
+}
+h4{
+    border-bottom: 1px solid #000000;
+    padding-bottom: 10px;
+}
+
+td{
+    padding: 10px;
+}
+a{
+    padding: 5px;
+    color: rgb(126, 78, 32);
+    text-decoration: none;
+    font-weight: bold;
+}
