@@ -1,1 +1,29 @@
-<p>author-details-page works!</p>
+<div class="author">
+  <h1>Details:</h1>
+  <p>Grade : {{ author?.grade }}</p>
+  <p>Nom : {{ author?.nom }}</p>
+  <p>Prenom : {{ author?.prenom }}</p>
+  <p>Email : {{ author?.email }}</p>
+  <p>Telephone : {{ author?.telephone }}</p>
+</div>
+<div class="books-list-wrapper">
+  <h1>Livres :</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Titre</th>
+        <th>Nombre de pages</th>
+        <th>Domaine</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let livre of author?.livres">
+        <td>{{ livre.titre }}</td>
+        <td>{{ livre.nombreDePage }}</td>
+        <td>{{ livre?.domaine?.nom }}</td>
+        <td>Delete</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
