@@ -1,13 +1,15 @@
 <div class="author">
-  <h1>Details:</h1>
-  <p>Grade : {{ author?.grade }}</p>
-  <p>Nom : {{ author?.nom }}</p>
-  <p>Prenom : {{ author?.prenom }}</p>
-  <p>Email : {{ author?.email }}</p>
-  <p>Telephone : {{ author?.telephone }}</p>
+  <div class = "full">
+  <div class="content">
+  <h2>Détails :</h2>
+  <p><strong>Grade : </strong>{{ author?.grade }}</p>
+  <p><strong>Nom :</strong> {{ author?.nom }}</p>
+  <p><strong>Prenom : </strong>{{ author?.prenom }}</p>
+  <p><strong>Email :</strong> {{ author?.email }}</p>
+  <p><strong>Telephone :</strong> {{ author?.telephone }}</p>
 </div>
-<div class="books-list-wrapper">
-  <h1>Livres :</h1>
+<h2>Livres :</h2>
+<div class = "container">
   <table>
     <thead>
       <tr>
@@ -19,6 +21,7 @@
     </thead>
     <tbody>
       <tr *ngFor="let livre of author?.livres">
+        
         <td>{{ livre.titre }}</td>
         <td>{{ livre.nombreDePage }}</td>
         <td>{{ livre?.domaine?.nom }}</td>
@@ -26,4 +29,6 @@
       </tr>
     </tbody>
   </table>
+</div>
+  </div>  
 </div>

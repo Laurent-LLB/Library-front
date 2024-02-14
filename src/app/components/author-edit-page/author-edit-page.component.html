@@ -1,18 +1,35 @@
+<div class = "author">
+  <div class = "full">
+    <h2>Edit Auteur</h2>
+  <div class="form-container">
 <form (ngSubmit)="onSubmit()">
+  <tr>
   <label for="grade">Grade</label>
-  <input type="text" name="grade" id="grade" [(ngModel)]="author.grade" />
+  <td></td><input type="text" name="grade" id="grade" [(ngModel)]="author.grade" />
+  </tr>
+  <tr>
   <label for="name">Nom</label>
-  <input type="text" name="name" id="name" [(ngModel)]="author.nom" />
+  <td></td><input type="text" name="name" id="name" [(ngModel)]="author.nom" />
+  </tr>
+  <tr>
   <label for="firstname">Prenom</label>
-  <input
+  <td></td><input
     type="text"
     name="firstname"
     id="firstname"
     [(ngModel)]="author.prenom"
   />
+  </tr>
+  <tr>
   <label for="email">Email</label>
-  <input type="email" name="email" id="email" [(ngModel)]="author.email" />
+  <td></td><input type="email" name="email" id="email" [(ngModel)]="author.email" />
+  </tr>
+  <tr>
   <label for="phone">Telephone</label>
-  <input type="text" name="phone" id="phone" [(ngModel)]="author.telephone" />
+  <td></td><input type="text" name="phone" id="phone" [(ngModel)]="author.telephone" />
+  </tr>
   <input type="submit" value="Modifier" />
 </form>
+</div>
+</div>
+</div>

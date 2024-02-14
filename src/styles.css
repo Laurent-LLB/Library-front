@@ -13,7 +13,7 @@ body{
 }
 
 h1, h3{
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 footer {
@@ -52,11 +52,49 @@ h4{
 }
 
 td{
-    padding: 10px;
+    padding: 20px;
 }
 a{
     padding: 5px;
     color: rgb(126, 78, 32);
     text-decoration: none;
     font-weight: bold;
+}
+
+.full{
+    background-color:rgba(248, 223, 168, 0.856);;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+strong{
+    font-weight: bold;
+}
+
+.cover{
+    max-width: 100px;
+    margin: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+.book {
+    background-image: url("https://images.unsplash.com/photo-1604931668626-ab49cb27d952?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.author {
+    background-image: url("https://images.unsplash.com/photo-1613688885914-fba34cfbf43a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
